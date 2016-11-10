@@ -21,7 +21,7 @@ angular
     'ngTagsInput'
   ])
   .constant("AppConstants", {
-    // "api": "http://localhost:3000"
+     // "api": "http://localhost:3000"
     "api": "https://arcane-peak-48225.herokuapp.com"
   })
   .config(['$routeProvider', 'RestangularProvider', '$httpProvider', 'AppConstants',
@@ -76,7 +76,8 @@ angular
         })
         .when('/signup', {
           templateUrl: 'views/signup.html',
-          controller: 'HomeCtrl',
+          controller: 'RegisterCtlr',
+          controllerAs: 'vm',
         })
         .when('/me', {
           templateUrl: 'views/me.html',
